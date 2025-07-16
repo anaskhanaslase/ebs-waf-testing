@@ -10,7 +10,7 @@ app.get('/health', (req, res) => {
     res.status(200).json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
-// 🔹 Dummy status endpoint (for WAF CAPTCHA test or logging)
+// Dummy status endpoint (for WAF CAPTCHA test or logging)
 app.get('/status', (req, res) => {
     res.status(200).json({ service: 'Node.js WAF Test API', version: '1.0.0' });
 });
